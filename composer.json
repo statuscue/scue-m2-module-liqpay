@@ -1,0 +1,26 @@
+{
+    "name": "statuscue/module-liqpay",
+    "description": "N/A",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "require": {
+        "php": "~7.4.0",
+        "liqpay/liqpay": "dev-master@dev",
+        "magento/module-sales": "103.0.*",
+        "magento/module-payment": "100.4.*",
+        "magento/module-checkout": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Scue\\LiqPay\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,24 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <scue_liqpay>
+                <active>1</active>
+                <title>LiqPay</title>
+                <model>ScueLiqPayAdapter</model>
+                <payment_action>authorize_capture</payment_action>
+                <allowed_currencies>UAH</allowed_currencies>
+                <connection_type>redirect</connection_type>
+                <order_status>pending_payment</order_status>
+                <is_gateway>1</is_gateway>
+                <can_initialize>1</can_initialize>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>0</can_authorize>
+                <can_capture>0</can_capture>
+                <can_void>0</can_void>
+                <can_use_internal>0</can_use_internal>
+                <can_refund>0</can_refund>
+                <debug>1</debug>
+            </scue_liqpay>
+        </payment>
+    </default>
+</config>
